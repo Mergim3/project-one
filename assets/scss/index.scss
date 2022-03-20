@@ -1,0 +1,281 @@
+@use "_fonts";
+@use "reset";
+
+$primary-color: #FFFFFF;
+$blue-color: #5474FD;
+$gray-text: #E8E8E8;
+$black-color: #232323;
+
+.container{
+  position: relative;
+  max-width: 1108px;
+  margin: 0 auto;
+}
+
+.banner-section {
+  background-image: url(/assets/images/artboard_image.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: inherit;
+  padding: 18rem 0;
+
+  &__wrapper{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+
+
+  &__title {
+    $Josefin-font:'Josefin Sans', sans-serif;
+    color: $primary-color;
+    font-size: 4.8rem;
+    line-height: 2.6rem;
+    font-weight: 700;
+    letter-spacing: 0.5rem;
+    margin-bottom: 1.1rem;
+  }
+  &__sub-heading {
+    $Josefin-font:'Josefin Sans', sans-serif;
+    font-weight: 400;
+    font-size: 2.2rem;
+    line-height: 2.6rem;
+    letter-spacing: 0.7rem;
+    color: $primary-color;
+    margin-bottom: 4.8rem;
+  }
+  &__search-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10.8rem;
+    width: 100%;
+    border: 1px solid $primary-color;
+    input {
+      box-sizing: border-box;
+      width: 100%;
+      border: none;
+      padding: 2.1rem 8rem;
+      color: $black-color;
+      font-size: 1.4rem;
+      line-height: 2.6rem;
+      letter-spacing: 0.28rem;
+      text-align: center;
+    }
+    button {
+      text-transform: uppercase;
+      font-size: 1.4rem;
+      line-height: 2.6rem;
+      letter-spacing: 0.15rem;
+      color: $primary-color;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+      box-sizing: border-box;
+      background-color: $blue-color;
+      padding: 2.1rem 2.5rem;
+      border: none;
+    }
+  }
+  &__scroll-down {
+    color: $primary-color;
+    $Josefin-font:'Josefin Sans', sans-serif;
+    font-size: 1.4rem;
+    line-height: 2.6rem;
+    letter-spacing: 0.3rem;
+    position: relative;
+    span {
+      position: absolute;
+      top: 3rem;
+      left: 50%;
+      width: 17px;
+      height: 17px;
+      margin-left: -12px;
+      border-left: 2px solid #fff;
+      border-bottom: 2px solid #fff;
+      -webkit-transform: rotate(-45deg);
+      transform: rotate(-45deg);
+      box-sizing: border-box;
+
+    }
+  }
+}
+.nav-section {
+  background-color:$blue-color;
+  &__main-nav {
+    padding: 4rem 0;
+    display: flex;
+    justify-content: space-around;
+   
+  }
+
+  &__wrapper{
+    display: flex;
+    padding: 30px 0;
+    justify-content: space-between;
+  }
+  
+    h3{
+      font-family: 'Josefin Sans';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 2.4rem;
+      line-height: 2.6rem;
+      color: $primary-color;
+    }
+  
+  &__list {
+    display: flex;
+    li {
+      margin-left: 2.5rem;
+      margin-right: 2.5rem;
+      a {
+        $Aleo-font: 'Aleo', serif;
+        font-size: 1.4rem;
+        line-height:2.6rem;
+        color: $primary-color
+      }
+    }
+  }
+}
+.why-choose-section {
+  background-image: url(../images/why-choose-us.jpg);
+  padding: 10rem 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    &-button{
+      margin-top: 45px;
+    }
+  }
+  &__img{
+    max-width: 350px;
+    height: 220px;
+    &:first-child{
+      margin-bottom: 10px;
+      margin-left: -85px;
+    }
+  }
+  &__txt {
+    width: 40%;
+    h2 {
+      font-size: 3.6rem;
+      font-weight: 400;
+      line-height: 2.6rem;
+      color: $primary-color;
+      margin-bottom: 2rem;
+      width: 55%;
+    }
+    p {
+      font-size: 1.6rem;
+      line-height: 2.6rem;
+      color: $primary-color;
+      margin-bottom: 2rem;
+      font-weight: 400;
+      letter-spacing: 1.2px;
+    }
+  }
+}
+
+.custom-button{
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  border-color: transparent;
+  width: fit-content;
+  background: linear-gradient(60deg, #496BFE 43%, $blue-color 35%);
+  padding: 20px 50px;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  line-height: 26px;
+  font-weight: 400;
+  color: white;
+  font-family: 'Aleo', serif;
+}
+
+.search-places-section{
+  background-color: #333333;
+  &__wrapper{
+    display: flex;
+    padding: 85px 0;
+    flex-direction: column;
+    &-box{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: #333;
+      span{
+        margin-top: 20px;
+        font-size: 36px;
+        color: white;
+      }
+    }
+    &-boxes{
+      display: flex;
+      justify-content: space-between;
+    }
+    &-lines{
+      display: flex;
+      justify-content: center;
+      margin-bottom: -50px;
+      img{
+        max-width: 777px;
+        height: 99px;
+      }
+    }
+  }
+}
+
+.places-section__wrapper-up{
+  background-image: url(../images/places-wrapper1.png);
+}
+
+.places-section__wrapper-bottom{
+  background-image: url(../images/places-wrapper2.png);
+}
+
+.places-section__wrapper-up, .places-section__wrapper-bottom{
+  padding: 227px 0 99px 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.places-section__wrapper{
+  &-right{
+    display: flex;
+    justify-content: flex-end;
+  }
+  &-box{
+    display: flex;
+    flex-direction: column;
+    background: rgba(35,35,35, 0.9);
+    color: white;
+    padding: 50px 32px;
+    max-width: 328px;
+    span{
+      font-size: 20px;
+      margin-bottom: 23px;
+    }
+    h3{
+      font-size: 20px;
+      margin-bottom: 13px;
+      text-transform: uppercase;
+    }
+    p{
+      margin-bottom: 46px;
+      font-size: 16px;
+    }
+  }
+}
+
+
+
+/*** media queries ***/
+
